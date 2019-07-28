@@ -1,18 +1,8 @@
 "use strict";
+var age = +prompt("Write your age: ", "");
 
-var admin;
-var name = "Vasiliy";
-admin = name;
-console.log(admin);
-var planet = "Earth";
-var user = "Petya";
-console.log(user + " from " + planet);
-
-function isInteger(num){
-    if(num == (num^0)){
-        return true;
-    }
-    else{return false;}
+if(age >= 14 && age <= 90){
+    alert("Yeah, cool"); 
 }
-console.log(isInteger(5));
-console.log(isInteger(1.5));
+else if(age < 14 || age > 90){alert("Babies have no access");}
+else{alert("either you're too old or you're too stupid and have inputed wrong age");}
